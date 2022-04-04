@@ -2,9 +2,9 @@ name: labrabotat52-h2o-Debug
 
 on:
   push:
-    branches: [ master,testing ]
+    branches: [ main,testing ]
   pull_request:
-    branches: [ master,testing ]
+    branches: [ main,testing ]
 
 jobs:
   build:
