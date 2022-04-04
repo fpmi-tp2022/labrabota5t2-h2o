@@ -13,3 +13,10 @@
 /home/katari/tp/labrabota5t2-h2o/cmake-build-debug/src/CMakeFiles/functional.dir
 /home/katari/tp/labrabota5t2-h2o/cmake-build-debug/src/CMakeFiles/menu.dir
 /home/katari/tp/labrabota5t2-h2o/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/test/CMakeFiles/install/strip.dir
+/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/test/CMakeFiles/install/local.dir
+/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/test/CMakeFiles/install.dir
+/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/test/CMakeFiles/labrabota5t2-h2o.test.dir
+/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/test/CMakeFiles/list_install_components.dir
+/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir

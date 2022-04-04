@@ -92,11 +92,11 @@
 	[
 		{
 			"backtrace" : 3,
-			"id" : "menu::@145eef247bfb46b6828c"
+			"id" : "functional::@145eef247bfb46b6828c"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "functional::@145eef247bfb46b6828c"
+			"id" : "menu::@145eef247bfb46b6828c"
 		}
 	],
 	"id" : "labrabota5t2-h2o.main::@145eef247bfb46b6828c",

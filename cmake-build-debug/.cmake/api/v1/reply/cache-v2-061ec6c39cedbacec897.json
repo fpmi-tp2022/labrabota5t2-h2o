@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1282,30 +1282,6 @@
 			"value" : "/usr/lib/libsqlite3.so"
 		},
 		{
-			"name" : "SQlite3_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for SQlite3."
-				}
-			],
-			"type" : "PATH",
-			"value" : "SQlite3_DIR-NOTFOUND"
-		},
-		{
-			"name" : "Sqlite3_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Sqlite3."
-				}
-			],
-			"type" : "PATH",
-			"value" : "Sqlite3_DIR-NOTFOUND"
-		},
-		{
 			"name" : "functional_LIB_DEPENDS",
 			"properties" : 
 			[
@@ -1340,18 +1316,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "ON"
-		},
-		{
-			"name" : "labrabota5t2-h2o_LIB_DEPENDS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Dependencies for the target"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "general;pthread;"
 		},
 		{
 			"name" : "labrabota5t2-h2o_SOURCE_DIR",

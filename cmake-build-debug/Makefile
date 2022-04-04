@@ -200,6 +200,19 @@ menu/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/menu.dir/build.make src/CMakeFiles/menu.dir/build
 .PHONY : menu/fast
 
+#=============================================================================
+# Target rules for targets named labrabota5t2-h2o.test
+
+# Build rule for target.
+labrabota5t2-h2o.test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 labrabota5t2-h2o.test
+.PHONY : labrabota5t2-h2o.test
+
+# fast build rule for target.
+labrabota5t2-h2o.test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make test/CMakeFiles/labrabota5t2-h2o.test.dir/build
+.PHONY : labrabota5t2-h2o.test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -214,6 +227,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... functional"
 	@echo "... labrabota5t2-h2o.main"
+	@echo "... labrabota5t2-h2o.test"
 	@echo "... menu"
 .PHONY : help
 

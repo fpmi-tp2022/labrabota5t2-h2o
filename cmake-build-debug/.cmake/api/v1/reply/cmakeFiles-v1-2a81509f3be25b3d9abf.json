@@ -153,6 +153,9 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/var/lib/snapd/snap/clion/184/bin/cmake/linux/share/cmake-3.21/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "test/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

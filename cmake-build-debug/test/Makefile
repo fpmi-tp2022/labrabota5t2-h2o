@@ -89,6 +89,27 @@ install/local/fast: preinstall/fast
 	/var/lib/snapd/snap/clion/184/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/var/lib/snapd/snap/clion/184/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/var/lib/snapd/snap/clion/184/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"library\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -108,27 +129,6 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"library\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/var/lib/snapd/snap/clion/184/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/var/lib/snapd/snap/clion/184/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -161,6 +161,68 @@ depend:
 	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+test/CMakeFiles/labrabota5t2-h2o.test.dir/rule:
+	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/labrabota5t2-h2o.test.dir/rule
+.PHONY : test/CMakeFiles/labrabota5t2-h2o.test.dir/rule
+
+# Convenience name for target.
+labrabota5t2-h2o.test: test/CMakeFiles/labrabota5t2-h2o.test.dir/rule
+.PHONY : labrabota5t2-h2o.test
+
+# fast build rule for target.
+labrabota5t2-h2o.test/fast:
+	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make test/CMakeFiles/labrabota5t2-h2o.test.dir/build
+.PHONY : labrabota5t2-h2o.test/fast
+
+all_tests.o: all_tests.cpp.o
+.PHONY : all_tests.o
+
+# target to build an object file
+all_tests.cpp.o:
+	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make test/CMakeFiles/labrabota5t2-h2o.test.dir/all_tests.cpp.o
+.PHONY : all_tests.cpp.o
+
+all_tests.i: all_tests.cpp.i
+.PHONY : all_tests.i
+
+# target to preprocess a source file
+all_tests.cpp.i:
+	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make test/CMakeFiles/labrabota5t2-h2o.test.dir/all_tests.cpp.i
+.PHONY : all_tests.cpp.i
+
+all_tests.s: all_tests.cpp.s
+.PHONY : all_tests.s
+
+# target to generate assembly for a file
+all_tests.cpp.s:
+	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make test/CMakeFiles/labrabota5t2-h2o.test.dir/all_tests.cpp.s
+.PHONY : all_tests.cpp.s
+
+test_functional.o: test_functional.cpp.o
+.PHONY : test_functional.o
+
+# target to build an object file
+test_functional.cpp.o:
+	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make test/CMakeFiles/labrabota5t2-h2o.test.dir/test_functional.cpp.o
+.PHONY : test_functional.cpp.o
+
+test_functional.i: test_functional.cpp.i
+.PHONY : test_functional.i
+
+# target to preprocess a source file
+test_functional.cpp.i:
+	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make test/CMakeFiles/labrabota5t2-h2o.test.dir/test_functional.cpp.i
+.PHONY : test_functional.cpp.i
+
+test_functional.s: test_functional.cpp.s
+.PHONY : test_functional.s
+
+# target to generate assembly for a file
+test_functional.cpp.s:
+	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make test/CMakeFiles/labrabota5t2-h2o.test.dir/test_functional.cpp.s
+.PHONY : test_functional.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -173,6 +235,13 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... labrabota5t2-h2o.test"
+	@echo "... all_tests.o"
+	@echo "... all_tests.i"
+	@echo "... all_tests.s"
+	@echo "... test_functional.o"
+	@echo "... test_functional.i"
+	@echo "... test_functional.s"
 .PHONY : help
 
 

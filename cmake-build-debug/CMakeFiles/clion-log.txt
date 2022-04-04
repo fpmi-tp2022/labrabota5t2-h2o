@@ -1,5 +1,4 @@
 /var/lib/snapd/snap/clion/184/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/katari/tp/labrabota5t2-h2o
--- Found SQLite3: /usr/include (found version "3.38.0") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/katari/tp/labrabota5t2-h2o/cmake-build-debug

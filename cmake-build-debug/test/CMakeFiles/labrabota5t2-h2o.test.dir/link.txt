@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/labrabota5t2-h2o.test.dir/all_tests.cpp.o CMakeFiles/labrabota5t2-h2o.test.dir/test_functional.cpp.o -o labrabota5t2-h2o.test  -Wl,-rpath,/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/src: ../src/libfunctional.so ../src/libmenu.so -lgtest -lpthread /usr/lib/libsqlite3.so 

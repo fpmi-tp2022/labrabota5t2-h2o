@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC  -O3 -g -g -shared -Wl,-soname,liblabrabota5t2-h2o.so -o liblabrabota5t2-h2o.so CMakeFiles/labrabota5t2-h2o.dir/functional.c.o  -lpthread 
