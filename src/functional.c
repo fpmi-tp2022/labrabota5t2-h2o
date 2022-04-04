@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <sqlite3.h> 
 #include <string.h>
-#include "functional.h"
+#include <functional.h>
 
 static int callback(void *data, int argc, char **argv, char **azColName) {
    int i;
@@ -29,7 +29,7 @@ void Error_Message(int rc, char* zErrMsg, char* Msg)
 sqlite3* open_data_base() {
    sqlite3 *f;
    ///////////////////////////
-   int rc = sqlite3_open("./docs/park.db", &f);
+   int rc = sqlite3_open("../docs/park.db", &f);
 
    if(rc) {
       fprintf(stderr, "Can't open database\n");

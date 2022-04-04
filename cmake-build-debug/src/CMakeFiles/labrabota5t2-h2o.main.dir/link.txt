@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3 -g -g CMakeFiles/labrabota5t2-h2o.main.dir/main.c.o -o labrabota5t2-h2o.main  -Wl,-rpath,/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/src: libfunctional.so libmenu.so /usr/lib/libsqlite3.so -lpthread 
