@@ -10,6 +10,7 @@ This project contains a database for a car park and makes SELECT queries dependi
 
 1. Clone the project
 2. Run makefile from cmd or terminal
+3. Or open with clion
 
 ###### Usage
 
