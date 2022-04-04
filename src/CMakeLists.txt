@@ -26,7 +26,7 @@ add_library(menu SHARED
 target_include_directories(menu
 		PUBLIC ${CMAKE_CURRENT_BINARY_DIR}
 		${${PROJECT_NAME}_SOURCE_DIR}/include)
-target_link_libraries(menu
+target_link_libraries(menu functional
 		pthread)
 
 add_executable(${PROJECT_NAME}.main main.c)
