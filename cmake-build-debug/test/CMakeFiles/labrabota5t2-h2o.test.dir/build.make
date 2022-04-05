@@ -108,8 +108,8 @@ labrabota5t2__h2o_test_EXTERNAL_OBJECTS =
 test/labrabota5t2-h2o.test: test/CMakeFiles/labrabota5t2-h2o.test.dir/all_tests.cpp.o
 test/labrabota5t2-h2o.test: test/CMakeFiles/labrabota5t2-h2o.test.dir/test_functional.cpp.o
 test/labrabota5t2-h2o.test: test/CMakeFiles/labrabota5t2-h2o.test.dir/build.make
-test/labrabota5t2-h2o.test: src/libfunctional.so
 test/labrabota5t2-h2o.test: src/libmenu.so
+test/labrabota5t2-h2o.test: src/libfunctional.so
 test/labrabota5t2-h2o.test: /usr/lib/libsqlite3.so
 test/labrabota5t2-h2o.test: test/CMakeFiles/labrabota5t2-h2o.test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable labrabota5t2-h2o.test"

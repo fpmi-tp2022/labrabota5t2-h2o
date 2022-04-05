@@ -94,6 +94,13 @@
 			]
 		}
 	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "functional::@145eef247bfb46b6828c"
+		}
+	],
 	"id" : "menu::@145eef247bfb46b6828c",
 	"install" : 
 	{
@@ -122,8 +129,21 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "-Wl,-rpath,/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/src:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libfunctional.so",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 3,
 				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libsqlite3.so",
 				"role" : "libraries"
 			}
 		],

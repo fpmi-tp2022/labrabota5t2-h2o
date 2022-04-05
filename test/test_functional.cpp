@@ -61,10 +61,20 @@ TEST(h2o_testing, testSelectByEachDriver) {
     EXPECT_EQ(selected, 0);
     sqlite3_close(db);
 }
+
 TEST(h2o_testing, testMinDriver) {
     sqlite3 *db = open_data_base();
     EXPECT_NE(db, nullptr);
     int selected = select_by_min_driver(db);
-    EXPECT_EQ(selected, 0);
+    EXPECT_EQ(selected, 8);
+    sqlite3_close(db);
+}
+
+TEST(h2o_testing, testCheckOrder) {
+    sqlite3 *db = open_data_base();
+    EXPECT_NE(db, nullptr);
+    std::string car_num = "1";
+    int order = check_order(db, 1000, car_num.data());
+    EXPECT_EQ(order, 0);
     sqlite3_close(db);
 }

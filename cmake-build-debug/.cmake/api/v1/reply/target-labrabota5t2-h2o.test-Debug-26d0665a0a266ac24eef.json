@@ -129,11 +129,6 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "../src/libfunctional.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
 				"fragment" : "../src/libmenu.so",
 				"role" : "libraries"
 			},
@@ -148,7 +143,17 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 3,
+				"fragment" : "../src/libfunctional.so",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "/usr/lib/libsqlite3.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lpthread",
 				"role" : "libraries"
 			}
 		],

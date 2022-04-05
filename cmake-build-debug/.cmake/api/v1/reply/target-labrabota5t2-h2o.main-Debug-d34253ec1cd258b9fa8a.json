@@ -132,12 +132,12 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "libfunctional.so",
+				"fragment" : "libmenu.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "libmenu.so",
+				"fragment" : "libfunctional.so",
 				"role" : "libraries"
 			},
 			{

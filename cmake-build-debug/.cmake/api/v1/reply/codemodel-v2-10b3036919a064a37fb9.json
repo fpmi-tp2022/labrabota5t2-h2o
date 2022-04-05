@@ -87,21 +87,21 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "labrabota5t2-h2o.main::@145eef247bfb46b6828c",
-					"jsonFile" : "target-labrabota5t2-h2o.main-Debug-2915def9112c74de23a5.json",
+					"jsonFile" : "target-labrabota5t2-h2o.main-Debug-d34253ec1cd258b9fa8a.json",
 					"name" : "labrabota5t2-h2o.main",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "labrabota5t2-h2o.test::@36f028580bb02cc8272a",
-					"jsonFile" : "target-labrabota5t2-h2o.test-Debug-fc2118147f6cc9e39802.json",
+					"jsonFile" : "target-labrabota5t2-h2o.test-Debug-26d0665a0a266ac24eef.json",
 					"name" : "labrabota5t2-h2o.test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "menu::@145eef247bfb46b6828c",
-					"jsonFile" : "target-menu-Debug-9a65652163cbcfc9157e.json",
+					"jsonFile" : "target-menu-Debug-7ea6408458c71e7fb7fb.json",
 					"name" : "menu",
 					"projectIndex" : 0
 				}

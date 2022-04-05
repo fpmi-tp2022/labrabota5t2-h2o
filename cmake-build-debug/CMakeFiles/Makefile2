@@ -168,7 +168,7 @@ src/CMakeFiles/functional.dir/clean:
 # Target rules for target src/CMakeFiles/menu.dir
 
 # All Build rule for target.
-src/CMakeFiles/menu.dir/all:
+src/CMakeFiles/menu.dir/all: src/CMakeFiles/functional.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/menu.dir/build.make src/CMakeFiles/menu.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/menu.dir/build.make src/CMakeFiles/menu.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target menu"
@@ -176,7 +176,7 @@ src/CMakeFiles/menu.dir/all:
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/menu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/katari/tp/labrabota5t2-h2o/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/katari/tp/labrabota5t2-h2o/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/menu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/katari/tp/labrabota5t2-h2o/cmake-build-debug/CMakeFiles 0
 .PHONY : src/CMakeFiles/menu.dir/rule

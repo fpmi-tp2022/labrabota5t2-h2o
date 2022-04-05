@@ -245,7 +245,7 @@ labrabota5t2-h2o_IS_TOP_LEVEL:STATIC=ON
 labrabota5t2-h2o_SOURCE_DIR:STATIC=/home/katari/tp/labrabota5t2-h2o
 
 //Dependencies for the target
-menu_LIB_DEPENDS:STATIC=general;pthread;
+menu_LIB_DEPENDS:STATIC=general;functional;general;pthread;
 
 
 ########################

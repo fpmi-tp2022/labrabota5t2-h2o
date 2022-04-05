@@ -1339,7 +1339,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "general;pthread;"
+			"value" : "general;functional;general;pthread;"
 		}
 	],
 	"kind" : "cache",

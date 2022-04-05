@@ -92,6 +92,8 @@ menu_EXTERNAL_OBJECTS =
 
 src/libmenu.so: src/CMakeFiles/menu.dir/menu.c.o
 src/libmenu.so: src/CMakeFiles/menu.dir/build.make
+src/libmenu.so: src/libfunctional.so
+src/libmenu.so: /usr/lib/libsqlite3.so
 src/libmenu.so: src/CMakeFiles/menu.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libmenu.so"
 	cd /home/katari/tp/labrabota5t2-h2o/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/menu.dir/link.txt --verbose=$(VERBOSE)

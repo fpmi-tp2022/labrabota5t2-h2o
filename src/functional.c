@@ -265,8 +265,8 @@ int check_order(sqlite3 *db, int gruz, char *num_machine) {
     char sql[100];
     snprintf(sql, sizeof(sql), "%s%s%s", sql1, num_machine, ";");
 
-    const char *data = gruz;
-
+    char data[10];
+    snprintf(data, sizeof (data), "%d", gruz);
     char *zErrMsg = 0;
 
     int rc = sqlite3_exec(db, sql, callback_return, (void *) data, &zErrMsg);

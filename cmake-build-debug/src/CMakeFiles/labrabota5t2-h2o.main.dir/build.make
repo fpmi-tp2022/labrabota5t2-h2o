@@ -92,8 +92,8 @@ labrabota5t2__h2o_main_EXTERNAL_OBJECTS =
 
 src/labrabota5t2-h2o.main: src/CMakeFiles/labrabota5t2-h2o.main.dir/main.c.o
 src/labrabota5t2-h2o.main: src/CMakeFiles/labrabota5t2-h2o.main.dir/build.make
-src/labrabota5t2-h2o.main: src/libfunctional.so
 src/labrabota5t2-h2o.main: src/libmenu.so
+src/labrabota5t2-h2o.main: src/libfunctional.so
 src/labrabota5t2-h2o.main: /usr/lib/libsqlite3.so
 src/labrabota5t2-h2o.main: src/CMakeFiles/labrabota5t2-h2o.main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/katari/tp/labrabota5t2-h2o/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable labrabota5t2-h2o.main"
