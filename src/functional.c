@@ -27,7 +27,7 @@ void Error_Message(int rc, char *zErrMsg, char *Msg) {
 sqlite3 *open_data_base() {
     sqlite3 *f;
     ///////////////////////////
-    int rc = sqlite3_open("../docs/park.db", &f);
+    int rc = sqlite3_open("/home/runner/work/labrabota5t2-h2o/labrabota5t2-h2o/docs/park.db", &f);
 
     if (rc) {
         fprintf(stderr, "Can't open database\n");
