@@ -27,7 +27,7 @@ void Error_Message(int rc, char *zErrMsg, char *Msg) {
 sqlite3 *open_data_base() {
     sqlite3 *f;
     ///////////////////////////
-    int rc = sqlite3_open("/home/runner/work/labrabota5t2-h2o/labrabota5t2-h2o/docs/park.db", &f);
+    int rc = sqlite3_open("../../docs/park.db", &f); //("/home/runner/work/labrabota5t2-h2o/labrabota5t2-h2o/docs/park.db", &f);
 
     if (rc) {
         fprintf(stderr, "Can't open database\n");
@@ -54,28 +54,20 @@ int select_by_driver(sqlite3 *db, char *driver) {
 
 int select_by_car(sqlite3 *db, char *car, char *driver) {
     ////////////////////
-    char *sql1 = "SELECT sum(distance), sum(weight) FROM PARK_ORDERS where car_number = ";
+    const char* format = driver ? "SELECT sum(distance), sum(weight) FROM PARK_ORDERS where car_number = '%s' and last_name = '%s';" :
+    "SELECT sum(distance), sum(weight) FROM PARK_ORDERS where car_number = '%s';";
     char sql[200];
-    snprintf(sql, sizeof sql, "%s%s", sql1, car);
-    if (driver != NULL) {
-        snprintf(sql, sizeof sql, "%s%s%s%s", sql, " and last_name = '", driver, "';");
-        printf("%s", sql);
-    }
+    sprintf(sql, format, car, driver);
     return select_data(db, sql);
 }
 
 int select_by_each_driver(sqlite3 *db, char *driver) {
     ////////////////////
     char sql1[500] = "SELECT last_name, count(*), sum(weight), sum(price*0.2) FROM PARK_ORDERS";
+    const char* format = driver ? "SELECT last_name, count(*), sum(weight), sum(price*0.2) FROM PARK_ORDERS where last_name = '%s';" :
+                         "SELECT last_name, count(*), sum(weight), sum(price*0.2) FROM PARK_ORDERS;";
     char sql[200];
-
-    if (driver != NULL) {
-        snprintf(sql1, sizeof sql1, "%s%s%s%s", sql1, " where last_name = '", driver, "'");
-        printf("%s", sql1);
-        //select_data(db, sql);
-        //return;
-    }
-    snprintf(sql, sizeof sql, "%s%s", sql1, " group by last_name;");
+    sprintf(sql, format, driver);
     return select_data(db, sql);
 }
 
@@ -276,19 +268,19 @@ int check_order(sqlite3 *db, int gruz, char *num_machine) {
     return 0;
 }
 
-void money(sqlite3 *db, char *begin_date, char *end_date) {
+int  money(sqlite3 *db, char *begin_date, char *end_date) {
     char *sql1 = "SELECT last_name, sum(price * 0.2) from PARK_ORDERS where date >= '";
     char sql[250];
     snprintf(sql, sizeof(sql), "%s%s%s%s%s", sql1, begin_date, "' and date<= '", end_date, "' group by last_name;");
 
-    select_data(db, sql);
+    return select_data(db, sql);
 }
 
-void money_by_driver(sqlite3 *db, char *begin_date, char *end_date, char *driver_name) {
+int money_by_driver(sqlite3 *db, char *begin_date, char *end_date, char *driver_name) {
     char *sql1 = "SELECT last_name, sum(price * 0.2) from PARK_ORDERS where date >= '";
     char sql[250];
     snprintf(sql, sizeof(sql), "%s%s%s%s%s%s%s", sql1, begin_date, "' and date<= '",
              end_date, "' and last_name = '", driver_name, "' group by last_name;");
 
-    select_data(db, sql);
+    return select_data(db, sql);
 }

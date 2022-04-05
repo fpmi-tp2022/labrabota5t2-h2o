@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  --coverage -O3 -g -g -shared -Wl,-soname,libfunctional.so -o libfunctional.so CMakeFiles/functional.dir/functional.c.o  -lpthread /usr/lib/libsqlite3.so 

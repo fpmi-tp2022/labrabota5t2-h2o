@@ -16,5 +16,5 @@ void insert_to_orders(sqlite3* db);
 void insert_to_cars(sqlite3* db);
 int check_order(sqlite3* db, int gruz, char* num_machine);
 
-void money(sqlite3* db, char* begin_date, char* end_date);
-void money_by_driver(sqlite3* db, char* begin_date, char* end_date, char* driver_name);
+int  money(sqlite3* db, char* begin_date, char* end_date);
+int money_by_driver(sqlite3* db, char* begin_date, char* end_date, char* driver_name);
