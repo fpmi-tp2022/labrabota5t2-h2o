@@ -81,7 +81,7 @@ TEST(h2o_testing, testCheckOrder) {
     sqlite3 *db = open_data_base();
     EXPECT_NE(db, nullptr);
     std::string car_num = "1";
-    char* s_data = car_num.data();
+    char* s_data = const_cast<char*>(car_num.data());
     int order = check_order(db, 1000, s_data);
     EXPECT_EQ(order, 0);
     sqlite3_close(db);
