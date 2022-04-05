@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC  --coverage -O3 -g -g -shared -Wl,-soname,libmenu.so -o libmenu.so CMakeFiles/menu.dir/menu.c.o  -Wl,-rpath,/home/katari/tp/labrabota5t2-h2o/build/src: libfunctional.so -lpthread /usr/lib/libsqlite3.so 
